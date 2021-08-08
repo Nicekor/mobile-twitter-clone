@@ -30,9 +30,8 @@ const Header: React.FC<BottomTabHeaderProps> = () => {
       >
         <Avatar
           rounded
-          source={{
-            uri: 'https://www.classifapp.com/wp-content/uploads/2017/09/avatar-placeholder.png',
-          }}
+          icon={{ type: 'ionicon', name: 'person', color: theme.colors?.grey2 }}
+          overlayContainerStyle={{ backgroundColor: theme.colors?.grey0 }}
         />
         <AntDesignIcon
           name="twitter"
