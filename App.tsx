@@ -21,7 +21,7 @@ export type RootStackParamList = {
   DMs: undefined
 }
 
-export const theme: Theme = {
+const theme: Theme = {
   Text: {
     style: {
       color: 'white',
@@ -31,6 +31,7 @@ export const theme: Theme = {
     primary: '#15202b',
     secondary: '#1da1f2',
     divider: '#38444d',
+    grey0: '#8899A6',
   },
 }
 
@@ -53,6 +54,7 @@ export default function App() {
                 tabBarStyle: styles.tabBar,
                 tabBarActiveTintColor: theme.colors?.secondary,
                 tabBarInactiveTintColor: theme.colors?.grey0,
+                tabBarShowLabel: false,
                 tabBarIcon: ({ focused, color, size }) => {
                   let iconName
 
